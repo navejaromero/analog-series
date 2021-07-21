@@ -1,5 +1,5 @@
 # analog-series
-## J. Jesus Naveja
+## José J. Naveja
 ## May 29th 2019
 ## naveja@comunidad.unam.mx
 
