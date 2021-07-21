@@ -276,7 +276,6 @@ def washdf(infile, smilescol, ncpu, sep=","):
 
     df = pd.read_csv(infile, sep=sep, engine='python') #read compounds
     df = df.rename(columns = {smilescol: "Molecule"}) #change smiles name
-    #print(df.head())
 
     with mp.Pool(processes = ncpu) as pool:  #apply wash function in parallel
         t0 = time.time()
@@ -285,4 +284,3 @@ def washdf(infile, smilescol, ncpu, sep=","):
         print("Wash done in: {} mins".format(round((t1-t0)/60,2)))
         
     return df, uniqwash(df,ncpu)
-
