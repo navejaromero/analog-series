@@ -28,7 +28,7 @@ def getASBS(wcm, mcores, AS_path, ucores_path):
         G.add_edge(m,w) #only using metacores (smaller network, same info)
 
     
-    AS = nx.connected_component_subgraphs(G)
+    AS = [G.subgraph(c) for c in nx.connected_components(G)]
     
     iclus = 0
 
@@ -89,7 +89,7 @@ def getAS(wcm, mcores, prefix):
         G.add_edge(m,w) #only using metacores (smaller network, same info)
 
     
-    AS = nx.connected_component_subgraphs(G)
+    AS = [G.subgraph(c) for c in nx.connected_components(G)]
     
     iclus = 0
 
