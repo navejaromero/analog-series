@@ -21,7 +21,7 @@ def ncuts(smi):
 
 
 def cor2mol(smi):
-    return fwash(smi.replace("*", "[H]"))
+    return fwash(smi.replace("*", "H"))
 
 
 # In[ ]:
@@ -61,4 +61,3 @@ def ucore(recap_path,ncpu):
     cwdf = cwdf.compute()
     
     return ucores, mcores, cwdf
-
