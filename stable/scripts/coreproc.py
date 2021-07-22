@@ -21,7 +21,7 @@ def ncuts(smi):
 
 
 def cor2mol(smi):
-    return fwash(smi.replace("*", "H"))
+    return fwash(smi.replace("*", "[H]"))
 
 
 # In[ ]:
