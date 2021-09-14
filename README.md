@@ -32,3 +32,11 @@ optional arguments:
                         Name of column with SMILES
   --ncpu NCPU           number of CPU to use (if positive) or to keep free (if
                         negative)
+
+
+References:
+
+Naveja, J.J., Pilón-Jiménez, B.A., Bajorath, J. et al. A general approach for retrosynthetic molecular core analysis. J Cheminform 11, 61 (2019). https://doi.org/10.1186/s13321-019-0380-5
+
+Naveja, J.J., Vogt, M., Stumpfe, D., Medina-Franco, J.L., Bajorath, J. Systematic Extraction of Analogue Series from Large Compound Collections Using a New Computational Compound–Core Relationship Method. ACS Omega 4, 1, (2019) 1027–1032.
+https://doi.org/10.1021/acsomega.8b03390
