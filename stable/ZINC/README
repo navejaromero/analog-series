@@ -1,1 +1,29 @@
+-------------------------------------
+#  Analog series processing of ZINC #
+#  J. Jesús Naveja		    #
+#  May 2019			    #
+#  naveja@comunidad.unam.mx         #
+-------------------------------------
 
+README
+
+In this folder, all files and data required to get 
+analog series from ZINC are present.
+
+First, from ZINC database, a downloader-txt.uri file
+with a list of repositories was obtained, which is used
+by ZINCget.sh. Then, all of the following is sequentially run in
+"big-data-cores.ipynb" or "big-data-cores.py":
+
+- Preprocess and wash molecules
+- Get unique
+- Split in files of maximum 1M molecules
+- Fragment every file
+
+Once the database is ready, "big-data-VS.ipynb" and "big-data-VS.py"
+run a virtual screening of analogs in the created output files:
+- Perform VS on every file given an input
+- Get hit files
+- Process hit files to R group tables
+
+May 29th 2019
