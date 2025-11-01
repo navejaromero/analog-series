@@ -13,7 +13,7 @@ Requirements:
 
 To annotate a library with metacores and AS, run get-cores.py. Usage: 
 
-usage: get-cores.py [-h] -i INFILE [-p PREFIX] [-c COREPROP] [-s SEP]
+get-cores.py [-h] -i INFILE [-p PREFIX] [-c COREPROP] [-s SEP]
                     [-t MAXT] [-smi SMILESCOL] [--ncpu NCPU]
 
 To get the CCR scaffolds for a database of compounds
